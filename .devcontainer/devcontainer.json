@@ -1,0 +1,5 @@
+{
+  "tasks": {
+    "build": "docker build -t your-docker-repository/chonkpump-manager:latest ."
+  }
+}

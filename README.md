@@ -30,6 +30,8 @@ cd chonk9k-whale-manager-deployment
 	•	MINT_ADDRESS: The mint address of the $CHONK9K token.
 	•	WHALE_THRESHOLD: The whale balance threshold to trigger alerts.
 	•	ALERT_WEBHOOK_URL: Webhook URL for receiving whale alerts.
+	•	NEW_UPDATE_AUTHORITY: The new update authority for the $CHONK9K token.
+	•	PAYER_KEYPAIR_PATH: Path to the payer's keypair file.
 	3.	Build and push the Docker image:
 
  docker build -t your-docker-repository/chonkpump-manager:latest .
@@ -38,6 +40,8 @@ docker push your-docker-repository/chonkpump-manager:latest
 	4.	Install the application with Helm:
 
  helm install chonkpump-manager ./chonkpump-manager
+
+	5.	Remember to update the .env file with your specific values for the environment variables.
 
  CI/CD Pipeline
 
