@@ -1,5 +1,6 @@
 {
   "tasks": {
-    "build": "docker build -t your-docker-repository/chonkpump-manager:latest ."
+    "build": "docker build -t chonkpump-manager/chonkpump-manager:latest .",
+    "launch": "docker build -t your-docker-repository/chonkpump-manager:latest . && docker push your-docker-repository/chonkpump-manager:latest && helm install chonkpump-manager ./chonkpump-manager"
   }
 }
