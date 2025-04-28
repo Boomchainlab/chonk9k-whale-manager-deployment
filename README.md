@@ -32,9 +32,7 @@ cd chonk9k-whale-manager-deployment
 	•	ALERT_WEBHOOK_URL: Webhook URL for receiving whale alerts.
 	•	NEW_UPDATE_AUTHORITY: The new update authority for the $CHONK9K token.
 	•	PAYER_KEYPAIR_PATH: Path to the payer's keypair file.
-	3.	Build and push the Docker image:
-
- docker build -t your-docker-repository/chonkpump-manager:latest .
+	3.	Build and push the Docker imag docker build -t your-docker-/chonkpump-manager:latest .
 docker push your-docker-repository/chonkpump-manager:latest
 
 	4.	Install the application with Helm:
@@ -53,7 +51,7 @@ docker push your-docker-repository/chonkpump-manager:latest
 
 		* Run the Docker container:
 		```sh
-		docker run -d --name chonkpump-manager your-docker-repository/chonkpump-manager:latest
+		docker run -d --name chonkpump-manager chonkpump-manager/chonkpump-manager:latest
 		```
 		This will start a container named `chonkpump-manager` in detached mode.
 
