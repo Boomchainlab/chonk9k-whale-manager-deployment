@@ -34,7 +34,7 @@ cd chonk9k-whale-manager-deployment
 	•	PAYER_KEYPAIR_PATH: Path to the payer's keypair file.
 	3.	Build and push the Docker image:
 
- docker build -t your-docker-repository/chonkpump-manager:latest .
+ docker build -t chonkpump-manager/chonkpump-manager:latest .
 docker push your-docker-repository/chonkpump-manager:latest
 
 	4.	Install the application with Helm:
@@ -47,13 +47,13 @@ docker push your-docker-repository/chonkpump-manager:latest
 
 		* Pull the Docker image:
 		```sh
-		docker pull your-docker-repository/chonkpump-manager:latest
+		docker pull chonkpump-manager/chonkpump-manager:latest
 		```
-		Replace `your-docker-repository` with the actual name of your Docker repository.
+		Replace `chonkpump-manager` with the actual name of your Docker repository.
 
 		* Run the Docker container:
 		```sh
-		docker run -d --name chonkpump-manager your-docker-repository/chonkpump-manager:latest
+		docker run -d --name chonkpump-manager chonkpump-manager/chonkpump-manager:latest
 		```
 		This will start a container named `chonkpump-manager` in detached mode.
 
