@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # Stage 2: Production stage
-FROM alpine:3.21
+FROM alpine:3.22
 
 # Set working directory
 WORKDIR /app
